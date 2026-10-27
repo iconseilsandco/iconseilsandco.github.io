@@ -1,59 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>i’Conseils & Co — Assistance</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 50px 24px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1 { font-size: 32px; }
-    h2 { margin-top: 36px; }
-    a { color: #0071e3; }
-    .box {
-      background: #f5f5f7;
-      padding: 24px;
-      border-radius: 16px;
-      margin-top: 24px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="i’Conseils & Co vous accompagne pour choisir, configurer et mieux utiliser vos appareils Apple, avec des conseils simples et pratiques.">
+  <meta name="theme-color" content="#f7f8fb">
+  <title>i’Conseils & Co | Comprendre, choisir, mieux utiliser</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>i’Conseils & Co</h1>
-
-  <h2>Assistance</h2>
-
-  <p>
-    Bienvenue sur la page d’assistance de l’application
-    <strong>i’Conseils & Co</strong>.
-  </p>
-
-  <p>
-    Pour toute question, demande d’aide ou signalement concernant
-    l’application, vous pouvez nous contacter par e-mail.
-  </p>
-
-  <div class="box">
-    <strong>Contact</strong><br>
-    <a href="mailto:iconseilsandco@gmail.com">
-      iconseilsandco@gmail.com
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="i’Conseils & Co, accueil">
+      <span class="brand-mark">i<span>•</span></span>
+      <span class="brand-name">i’Conseils <b>& Co</b><small>Le numérique, plus simplement.</small></span>
     </a>
-  </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" class="navigation" aria-label="Navigation principale">
+      <a href="#services">Nos services</a>
+      <a href="#astuces">Astuces</a>
+      <a href="#guides">Guides</a>
+      <a href="#professionnels">Professionnels</a>
+      <a class="nav-cta" href="#contact">Nous contacter</a>
+    </nav>
+  </header>
 
-  <h2>Confidentialité</h2>
+  <main id="contenu">
+    <section class="hero section" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Conseils indépendants, accompagnement humain</p>
+        <h1>Vos appareils Apple.<br><span>En toute simplicité.</span></h1>
+        <p class="hero-lead">Des conseils clairs pour choisir le bon appareil, mieux le configurer et profiter de ses possibilités au quotidien.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Découvrir nos services <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#astuces">Voir les astuces</a>
+        </div>
+        <p class="hero-note">Pour les particuliers, les seniors et les professionnels.</p>
+      </div>
+      <div class="hero-art" aria-label="Illustration décorative d’appareils numériques" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="device device-laptop"><div class="laptop-screen"><div class="screen-glow"></div><div class="screen-lines"></div></div><div class="laptop-base"></div></div>
+        <div class="device device-phone"><div class="phone-island"></div><div class="phone-wallpaper"><span></span><span></span><span></span><span></span></div><div class="phone-home"></div></div>
+        <div class="device device-watch"><div class="watch-band"></div><div class="watch-face"><b>09:41</b><span>•••</span></div></div>
+        <div class="floating-chip chip-top">✓ Conseils pratiques</div>
+        <div class="floating-chip chip-bottom">À votre rythme</div>
+      </div>
+    </section>
 
-  <p>
-    Consultez notre politique de confidentialité :
-  </p>
+    <section class="trust-strip" aria-label="Nos engagements">
+      <div><span class="trust-icon">◎</span><span><b>Des explications claires</b><small>Sans jargon inutile</small></span></div>
+      <div><span class="trust-icon">♡</span><span><b>Un accompagnement humain</b><small>Adapté à votre besoin</small></span></div>
+      <div><span class="trust-icon">↗</span><span><b>Des conseils utiles</b><small>Pour mieux décider</small></span></div>
+    </section>
 
-  <p>
-    <a href="confidentialite.html">Politique de confidentialité</a>
-  </p>
+    <section class="section section-space" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">Nos services</p>
+        <h2>Un coup de main, du choix à l’utilisation.</h2>
+        <p>Vous avez une question, un projet d’achat ou besoin d’aide pour prendre en main votre appareil ? Nous vous aidons à y voir plus clair.</p>
+      </div>
+      <div class="card-grid services-grid">
+        <article class="service-card"><div class="card-icon icon-blue">⌕</div><h3>Aide à l’achat</h3><p>Comparer les appareils et les options selon vos besoins, vos usages et votre budget.</p><a href="#contact">Parler de mon projet <span>↗</span></a></article>
+        <article class="service-card"><div class="card-icon icon-violet">⚙</div><h3>Configuration</h3><p>Être accompagné pour régler votre appareil et le préparer à votre utilisation quotidienne.</p><a href="#contact">Demander un accompagnement <span>↗</span></a></article>
+        <article class="service-card"><div class="card-icon icon-green">⌘</div><h3>Prise en main</h3><p>Comprendre les fonctions utiles, les réglages et les gestes qui facilitent le quotidien.</p><a href="#contact">Décrire mon besoin <span>↗</span></a></article>
+        <article class="service-card"><div class="card-icon icon-orange">盾</div><h3>Sécurité et dépannage</h3><p>Obtenir des explications accessibles sur les réglages de sécurité et les difficultés courantes.</p><a href="#contact">Expliquer mon problème <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="tips-section section-space" id="astuces">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">Astuces gratuites</p><h2>Un petit conseil peut tout changer.</h2></div>
+        <p>Retrouvez ici des conseils courts et pratiques, inspirés des thèmes abordés dans nos publications et notre application.</p>
+      </div>
+      <div class="topic-grid">
+        <a class="topic-card topic-iphone" href="#contact"><span class="topic-symbol">▯</span><span><b>iPhone</b><small>Réglages et usages du quotidien</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card topic-ipad" href="#contact"><span class="topic-symbol">▱</span><span><b>iPad</b><small>Organisation et confort d’utilisation</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card topic-mac" href="#contact"><span class="topic-symbol">▭</span><span><b>Mac</b><small>Productivité et fonctions utiles</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card topic-watch" href="#contact"><span class="topic-symbol">◷</span><span><b>Apple Watch</b><small>Bien démarrer et personnaliser</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card topic-safe" href="#contact"><span class="topic-symbol">◇</span><span><b>Sécurité</b><small>Protéger ses données et ses comptes</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card topic-access" href="#contact"><span class="topic-symbol">◉</span><span><b>Accessibilité</b><small>Adapter son appareil à ses besoins</small></span><span class="topic-arrow">↗</span></a>
+      </div>
+      <p class="editorial-note">Les astuces détaillées seront ajoutées progressivement. Les informations techniques peuvent évoluer selon l’appareil et la version du système.</p>
+    </section>
+
+    <section class="section section-space" id="guides">
+      <div class="guide-panel">
+        <div class="guide-visual" aria-hidden="true"><div class="guide-page"><span class="guide-label">GUIDE PRATIQUE</span><i></i><i></i><i class="short"></i><div class="guide-check">✓</div></div><div class="guide-bubble">Pas à pas</div></div>
+        <div class="guide-copy"><p class="eyebrow">Guides pratiques</p><h2>Comprendre, étape par étape.</h2><p>Des explications plus détaillées pour aller au-delà de l’astuce rapide : réglages, dépannage, sécurité et nouvelles fonctions.</p><a class="button button-primary" href="#contact">Demander un guide ou un conseil <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="business-section section-space" id="professionnels">
+      <div class="business-copy"><p class="eyebrow">Pour les professionnels</p><h2>Des outils bien compris, du temps mieux utilisé.</h2><p>Un accompagnement adapté aux indépendants et aux entreprises qui souhaitent mieux choisir, configurer ou utiliser leurs appareils Apple.</p><a class="button button-light" href="#contact">Parlons de vos besoins <span aria-hidden="true">↗</span></a></div>
+      <div class="business-points"><div><span>01</span><p><b>Choix des équipements</b><small>Faire le point sur les usages et les besoins.</small></p></div><div><span>02</span><p><b>Configuration et prise en main</b><small>Des réglages compréhensibles et adaptés.</small></p></div><div><span>03</span><p><b>Conseils pratiques</b><small>Des repères pour gagner en autonomie.</small></p></div></div>
+    </section>
+
+    <section class="contact-section section-space" id="contact">
+      <div class="contact-intro"><p class="eyebrow">Contact</p><h2>Expliquez-nous votre besoin.</h2><p>Indiquez l’appareil concerné et la difficulté rencontrée. Nous pourrons mieux comprendre votre demande et vous recontacter.</p><div class="contact-mini"><span>✉</span><p><b>Un formulaire simple</b><small>Vos coordonnées et quelques détails suffisent pour commencer.</small></p></div><p class="privacy-note">Le formulaire est hébergé par Jotform, un service externe. Les informations transmises servent à traiter votre demande et à vous recontacter.</p></div>
+      <div class="form-card">
+        <div class="form-card-heading"><span class="form-icon">↗</span><div><h3>Votre demande</h3><p>Ouverture du formulaire sécurisé</p></div></div>
+        <p>Le formulaire i’Conseils & Co recueille vos coordonnées, l’appareil concerné et la description de votre besoin.</p>
+        <a class="button button-primary button-full" href="https://form.jotform.com/262722912724053" target="_blank" rel="noopener noreferrer">Accéder au formulaire de contact <span aria-hidden="true">↗</span></a>
+        <p class="form-footnote">Le formulaire s’ouvre sur Jotform dans un nouvel onglet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#accueil"><span class="brand-mark">i<span>•</span></span><span class="brand-name">i’Conseils <b>& Co</b><small>Le numérique, plus simplement.</small></span></a><p>Des conseils indépendants pour mieux choisir, configurer et utiliser vos appareils.</p></div>
+    <div class="footer-links"><a href="#services">Services</a><a href="#astuces">Astuces</a><a href="#contact">Contact</a><a href="https://iconseilsandco.github.io/confidentialite.html" target="_blank" rel="noopener noreferrer">Confidentialité</a></div>
+    <div class="footer-bottom"><p>© <span id="year">2026</span> i’Conseils & Co. Tous droits réservés.</p><p>i’Conseils & Co est une activité indépendante. Elle n’est ni affiliée à Apple, ni mandatée par Apple. Apple et les noms de ses produits sont des marques de leurs détenteurs respectifs.</p></div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navigation');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
