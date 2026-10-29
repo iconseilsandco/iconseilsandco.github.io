@@ -12,3 +12,69 @@
 @media(max-width:1000px){.navigation{gap:16px}.card-grid{grid-template-columns:repeat(2,1fr)}.service-card p{min-height:60px}.hero{gap:20px}.hero-art{transform:scale(.9)}.contact-section{gap:45px}.guide-panel{gap:35px}.business-section{gap:35px}}
 @media(max-width:760px){.site-header{height:72px;padding:0 20px}.menu-toggle{display:block}.navigation{display:none;position:absolute;top:71px;left:0;right:0;background:#fff;padding:18px 22px 24px;border-bottom:1px solid var(--line);box-shadow:0 15px 20px #1c2c4c0c;flex-direction:column;align-items:stretch;gap:0}.navigation.is-open{display:flex}.navigation a{padding:12px 3px}.navigation .nav-cta{text-align:center;margin-top:8px}.hero{grid-template-columns:1fr;padding:55px 24px 35px;gap:8px}.hero h1{font-size:42px;letter-spacing:-1.7px}.hero-lead{font-size:15px}.hero-art{height:320px;transform:scale(.88);margin:0 -25px}.trust-strip{display:grid;grid-template-columns:1fr;gap:15px;padding:22px 24px}.trust-strip>div{max-width:310px;margin:auto;width:100%}.section-space{padding:65px 24px}.section-heading h2,.guide-copy h2,.business-copy h2,.contact-intro h2{font-size:32px;letter-spacing:-1.1px}.section-heading-row{display:block}.section-heading-row>p{margin-top:14px}.card-grid,.topic-grid{grid-template-columns:1fr}.service-card p{min-height:0}.guide-panel{grid-template-columns:1fr;padding:30px 23px;gap:20px}.guide-visual{height:220px}.guide-copy{text-align:left}.business-section{margin:0 16px;padding:36px 25px;grid-template-columns:1fr;gap:25px}.contact-section{grid-template-columns:1fr;gap:30px}.form-card{padding:23px}.footer-main{display:block}.footer-main>p{margin-top:20px}.footer-links{flex-wrap:wrap;gap:14px 22px}.footer-bottom{display:block}.footer-bottom p:last-child{text-align:left;margin-top:10px}.brand-name{font-size:15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* ===== Ajouts : barre contact, tarifs, offres colorées, à propos ===== */
+:root{
+  /* Bleu MacBook Air */
+  --air-bg:#e4edf5;--air-accent:#4f7ea6;--air-ink:#1d3449;
+  /* Vert iMac */
+  --imac-bg:#e2f1df;--imac-accent:#3d8a57;--imac-ink:#173d24;
+  /* Noir MacBook Pro (noir sidéral mat) */
+  --mbp-bg:#1d1d1f;--mbp-panel:#2a2a2d;--mbp-ink:#f5f5f7;--mbp-muted:#b7b7bd;
+}
+.contact-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;padding:9px 20px;background:#152239;color:#e8edf7;font-size:12px}
+.contact-bar a{font-weight:700;color:#fff}.contact-bar a:hover{text-decoration:underline}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{display:flex;flex-direction:column;padding:26px 24px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.price-card h3{font:800 18px Manrope,sans-serif;margin:0 0 10px}
+.price-card .price{font:800 30px Manrope,sans-serif;color:var(--blue);margin:0 0 12px;line-height:1.2}
+.price-card .price small{display:block;font:500 12px 'DM Sans',sans-serif;color:var(--muted);margin-top:4px}
+.price-card>p:not(.price){font-size:13px;color:var(--muted);margin:0 0 20px;flex:1}
+.price-card .button{align-self:flex-start}
+.tva-note{font-size:11px;color:#8490a2;margin:18px 0 0}
+.offers-section{background:#f7f8fc}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+.offer{display:flex;flex-direction:column;padding:28px 24px;border-radius:22px}
+.offer-badge{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin:0 0 12px}
+.offer h3{font:800 20px/1.3 Manrope,sans-serif;letter-spacing:-.4px;margin:0 0 10px}
+.offer-price{font:800 32px Manrope,sans-serif;margin:0 0 12px;line-height:1.1}
+.offer-price small{font:500 14px 'DM Sans',sans-serif}
+.offer>p:not(.offer-badge):not(.offer-price){font-size:13.5px;line-height:1.7;margin:0 0 16px}
+.offer details{margin:0 0 20px;border-radius:14px;padding:12px 14px}
+.offer summary{cursor:pointer;font-size:13px;font-weight:800}
+.offer details h4{font:800 12px Manrope,sans-serif;margin:16px 0 6px;text-transform:uppercase;letter-spacing:.6px}
+.offer details ul{margin:8px 0 0;padding-left:18px;font-size:12.5px;line-height:1.6}
+.offer details li{margin:3px 0}
+.offer-button{margin-top:auto;align-self:stretch}
+.offer-air{background:var(--air-bg);color:var(--air-ink);border:1px solid #c9dae9}
+.offer-air .offer-badge,.offer-air summary,.offer-air h4{color:var(--air-accent)}
+.offer-air details{background:#ffffffaa}
+.offer-air .offer-button{background:var(--air-accent);color:#fff}
+.offer-premium{background:var(--imac-bg);color:var(--imac-ink);border:1px solid #c3e0bd}
+.offer-premium .offer-badge,.offer-premium summary,.offer-premium .offer-price{color:var(--imac-accent)}
+.offer-premium details{background:#ffffffaa}
+.offer-premium .offer-button{background:var(--imac-accent);color:#fff}
+.offer-pro{background:var(--mbp-bg);color:var(--mbp-ink);box-shadow:0 18px 40px #0000002e}
+.offer-pro>p:not(.offer-badge):not(.offer-price){color:var(--mbp-muted)}
+.offer-pro .offer-badge{color:#d6d6db}
+.offer-pro details{background:var(--mbp-panel)}
+.offer-pro summary{color:#fff}
+.offer-pro details ul{color:var(--mbp-muted)}
+.offer-pro .offer-button{background:#f5f5f7;color:#1d1d1f}
+.about-card{display:flex;gap:30px;align-items:center;max-width:860px;padding:34px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:var(--shadow)}
+.about-avatar{flex:none;width:96px;height:96px;border-radius:28px;background:var(--blue);color:#fff;display:grid;place-items:center;font:800 32px Manrope,sans-serif}
+.about-card h2{font:800 32px Manrope,sans-serif;letter-spacing:-1px;margin:0 0 10px}
+.about-card p:not(.eyebrow){color:var(--muted);font-size:15px;margin:0}
+.contact-mini a:hover{color:var(--blue)}
+.footer-main>p{text-align:right}
+@media(max-width:1000px){.price-grid,.offer-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.about-card{flex-direction:column;align-items:flex-start;padding:24px}.footer-main>p{text-align:left}}
+.indicative-note{font-size:13px!important;color:#3d4a63!important;background:#edf3ff;border-radius:12px;padding:12px 14px}
+.price-card .price .from{display:block;font:700 10px 'DM Sans',sans-serif;letter-spacing:1px;text-transform:uppercase;color:#8490a2;margin-bottom:4px}
+.tip-order{display:flex;flex-direction:column;gap:10px;margin-top:auto}
+.tip-order label{font-size:12px;font-weight:800;color:var(--air-accent)}
+.tip-order select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #c9dae9;background:#fff;color:var(--air-ink);font:500 13px 'DM Sans',sans-serif}
+.tip-mail{text-align:center;font-size:12px;font-weight:800;color:var(--air-accent);padding:6px}
+.tip-mail:hover{text-decoration:underline}
+.tip-help{font-size:11.5px;margin:0;color:#4a6176}
+.button.is-disabled{opacity:.45;cursor:not-allowed;transform:none}
